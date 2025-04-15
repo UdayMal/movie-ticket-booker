@@ -24,10 +24,10 @@ require('dotenv').config();
 const connection = mongoose.connection;
 
 connection.on('connected' , ()=>{
-    console.log('Mongo DB Connetion Successfull');
+    console.log('Mongo DB Connection Successful');
 })
 
 connection.on('error' , (err)=>{
-    console.log('Mongo DB Connetion Failed');
+    console.log('Mongo DB Connection Failed');
 })
 

@@ -96,5 +96,8 @@ router.get("/get-current-user", authMiddleware , async (req, res)=>{
     }
 });
 
+router.get("/protected-route", authMiddleware, (req, res) => {
+    res.send({ success: true, message: "You have access!", userId: req.body.userId });
+});
 
-module.exports = router;
+module.exports = router;    
