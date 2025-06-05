@@ -19,5 +19,5 @@ app.use("/api/theatres", theatresRoute);
 app.use('/api/payments', paymentRoute);
 app.use('/api/bookings', bookingsRoute);
 
-const port = process.env.PORT || 5000; 
+const port = process.env.PORT || 3000; 
 app.listen(port, () => console.log(`Node JS Server is running on port ${port}`));
